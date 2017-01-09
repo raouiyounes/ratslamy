@@ -1,0 +1,2 @@
+ratslam_ros
+-DCATKIN_DEVEL_PREFIX=/home/younes/Musique/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/younes/Musique/catkin_ws/install -G Unix Makefiles

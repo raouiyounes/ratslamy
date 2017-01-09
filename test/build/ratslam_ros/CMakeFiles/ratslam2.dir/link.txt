@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC   -shared -Wl,-soname,libratslam2.so -o /home/younes/Musique/catkin_ws/devel/lib/libratslam2.so CMakeFiles/ratslam2.dir/src/ratslam/FPVision.cpp.o 

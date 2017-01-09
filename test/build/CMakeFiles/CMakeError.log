@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/younes/Images/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6ccca/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6ccca.dir/build.make CMakeFiles/cmTC_6ccca.dir/build
+make[1] : on entre dans le répertoire « /home/younes/Images/catkin_ws/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_6ccca.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_6ccca.dir/CheckSymbolExists.c.o   -c /home/younes/Images/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_6ccca
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6ccca.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_6ccca.dir/CheckSymbolExists.c.o  -o cmTC_6ccca -rdynamic 
+CMakeFiles/cmTC_6ccca.dir/CheckSymbolExists.c.o: dans la fonction « main »:
+CheckSymbolExists.c:(.text+0x16): référence indéfinie vers « pthread_create »
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_6ccca.dir/build.make:97 : la recette pour la cible « cmTC_6ccca » a échouée
+make[1]: *** [cmTC_6ccca] Erreur 1
+make[1] : on quitte le répertoire « /home/younes/Images/catkin_ws/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_6ccca/fast » a échouée
+make: *** [cmTC_6ccca/fast] Erreur 2
+
+File /home/younes/Images/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/younes/Images/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_dcc3a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dcc3a.dir/build.make CMakeFiles/cmTC_dcc3a.dir/build
+make[1] : on entre dans le répertoire « /home/younes/Images/catkin_ws/build/CMakeFiles/CMakeTmp »
+Building C object CMakeFiles/cmTC_dcc3a.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_dcc3a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_dcc3a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dcc3a.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_dcc3a.dir/CheckFunctionExists.c.o  -o cmTC_dcc3a -rdynamic -lpthreads 
+/usr/bin/ld : ne peut trouver -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_dcc3a.dir/build.make:97 : la recette pour la cible « cmTC_dcc3a » a échouée
+make[1]: *** [cmTC_dcc3a] Erreur 1
+make[1] : on quitte le répertoire « /home/younes/Images/catkin_ws/build/CMakeFiles/CMakeTmp »
+Makefile:126 : la recette pour la cible « cmTC_dcc3a/fast » a échouée
+make: *** [cmTC_dcc3a/fast] Erreur 2
+
+
