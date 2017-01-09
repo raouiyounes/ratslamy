@@ -1,0 +1,15 @@
+eclipse.preferences.version=1
+environment/project/0.1329886870/PATH/delimiter=\:
+environment/project/0.1329886870/PATH/operation=append
+environment/project/0.1329886870/PATH/value=/opt/ros/kinetic/bin\:/home/younes/bin\:/home/younes/.local/bin\:/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/usr/games\:/usr/local/games\:/snap/bin
+environment/project/0.1329886870/PYTHONPATH/delimiter=\:
+environment/project/0.1329886870/PYTHONPATH/operation=append
+environment/project/0.1329886870/PYTHONPATH/value=/opt/ros/kinetic/lib64/python2.7/site-packages
+environment/project/0.1329886870/ROS_PACKAGE_PATH/delimiter=\:
+environment/project/0.1329886870/ROS_PACKAGE_PATH/operation=append
+environment/project/0.1329886870/ROS_PACKAGE_PATH/value=/opt/ros/kinetic/share
+environment/project/0.1329886870/ROS_ROOT/delimiter=\:
+environment/project/0.1329886870/ROS_ROOT/operation=append
+environment/project/0.1329886870/ROS_ROOT/value=/opt/ros/kinetic/share/ros
+environment/project/0.1329886870/append=true
+environment/project/0.1329886870/appendContributed=true
